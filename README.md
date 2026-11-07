@@ -1,7 +1,7 @@
 # Hello panel — Exaudio example extension
 
 `example.hello-panel` is the reference WASM extension for [Exaudio](https://github.com/Nominy/exaudio).
-It contributes a **Hello panel** command panel that inserts a greeting into the
+It contributes a **Hello panel** button panel and the `example.hello-panel.greet` action (⋯ menu, palette, Ctrl+Alt+G) that inserts a greeting into the
 active document, publishes a diagnostic for empty segments, and registers a
 synthetic `Hello account` provider plus a `Hello notes` mode: "signing in" stores
 a display name in the instance secret store, and the mode opens a notes document
@@ -39,9 +39,10 @@ asset is the `.exaudio` package. The reviewed catalog
 the release tag, source commit, manifest, asset URL, byte size and SHA-256; the
 app installs only bytes that match that record.
 
-| Version | Tag | Asset |
-| --- | --- | --- |
-| 0.1.0 | `v0.1.0` | `example.hello-panel-0.1.0.exaudio` |
+| Version | Tag | Asset | Host |
+| --- | --- | --- | --- |
+| 0.2.0 | `v0.2.0` | `example.hello-panel-0.2.0.exaudio` | extension API `^0.2.0` (`on-action` world) |
+| 0.1.0 | `v0.1.0` | `example.hello-panel-0.1.0.exaudio` | extension API `^0.1.0` |
 
 ## Permissions
 
